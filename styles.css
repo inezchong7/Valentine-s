@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bagel+Fat+One&family=Bubblegum+Sans&family=Chewy&family=Press+Start+2P&display=swap');body {
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+}
+
+.wrapper {
+    /* position: relative; */
+    /* width: 100%;
+    height: 500px; */
+    background: #fff;
+    border-radius: 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+}
+
+.button-group {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    position: absolute;
+    /* margin-top: 800px; */
+    margin: auto;
+    padding: 10px;
+    /* width: 150px; */
+    height: inherit;
+    font-size: 1.2em;
+    color: white;
+    background-color: #ffc6e8;
+    font-weight: 600;
+    border-radius: 30px;
+    border: 2px solid #7d2ae8;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+}
+
+button:nth-child(1) {
+    left: 300px;
+}
+
+button:nth-child(2) {
+    left: 800px;
+}
+
+h1 {
+    color: purple;
+    font-family: 'Press Start 2P';
+}
+
+.babygurl {
+    font-family: 'Alex Brush';
+    font-size: 20px;
+    color: #fc00ff;
+}
+
+.poem h1{
+    color: #cf2ae8;
+    text-shadow: 5px 5px #ffd8ef;
+}
+
+/* https://codepen.io/cbanlawi/pen/xxRBeMY */
+.glitch {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fd77ff,
+      0.025em 0.04em 0 #fffc00;
+    animation: glitch 725ms infinite;
+  }
+  
+  .glitch span {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .glitch span:first-child {
+    animation: glitch 500ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+    transform: translate(-0.04em, -0.03em);
+    opacity: 0.75;
+  }
+  
+  .glitch span:last-child {
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+    transform: translate(0.04em, 0.03em);
+    opacity: 0.75;
+  }
+  
+  @keyframes glitch {
+    0% {
+      text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+        0.025em 0.04em 0 #fffc00;
+    }
+    15% {
+      text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+        0.025em 0.04em 0 #fffc00;
+    }
+    16% {
+      text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+        -0.05em -0.05em 0 #fffc00;
+    }
+    49% {
+      text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+        -0.05em -0.05em 0 #fffc00;
+    }
+    50% {
+      text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+        0 -0.04em 0 #fffc00;
+    }
+    99% {
+      text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+        0 -0.04em 0 #fffc00;
+    }
+    100% {
+      text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
+        -0.04em -0.025em 0 #fffc00;
+    }
+  }
+  
+

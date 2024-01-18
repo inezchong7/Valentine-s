@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <h1>!ALERT!</h1>
+    </div>
+
+    <div>
+        <p>This invite is for </p>
+        <p>THIS beautiful chocolate man <strong>ONLY</strong> (& his demon within)</p>
+    </div>
+
+    <div>
+        <img src="./images/le demon.jpg">
+    </div>
+
+    <button onclick="youDidntSeeNothing()">
+        <p>i have never seen this man in my life i'm calling the police</p>
+    </button>
+
+    <button onclick="redirectToLevel2()">
+        <p>why YES i am this gorgeous brown man tell me more</p>
+    </button>
+
+    <script>
+        function redirectToLevel2() {
+            // Redirect to page2.html
+            window.location.href = 'invite.html';
+        }
+
+        function youDidntSeeNothing() {
+            window.location.href = 'nothingHere.html';
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>
+            <h1 class="glitch">
+                I CHOOSE YOU 🫵🏼
+            </h1>
+
+            <p class="babygurl">to be my babygurl (teehee)</p>
+        </div>
+
+        <div>
+            <img src="./images/hitler pokemon.gif">
+        </div>
+
+        <div class="poem">
+            <h1>Don't say Nein </h1>
+            <h1>Please be Mein </h1>
+            <h1>Valentine</h1>
+        </div>
+
+        <div class="button-group">
+            <button>
+                <p>JA, i will be your valentine, Mein Führer 🫡</p>
+            </button>
+
+            <button class="no-btn">
+                <p>NEIN, i'm only with you for the lols 😶‍🌫️</p>
+            </button>
+        </div>
+
+    </div>
+
+    <!-- https://codehalweb.com/button-randomly-change-position/ -->
+    <script>
+        const noBtn = document.querySelector('.no-btn');
+        //getBoundingClientRect(): providing information about the size and position of a specified element relative to the viewport. 
+        //The returned DOMRect object contains properties such as top, right, bottom, left, width, and height.
+        const noBtnRect = noBtn.getBoundingClientRect();
+
+        const wrapper = document.querySelector('.wrapper')
+        const wrapperRect = wrapper.getBoundingClientRect();
+
+        noBtn.addEventListener('mouseover', () => {
+            const i = Math.floor(Math.random() * (wrapperRect.width - noBtnRect.width)) + 1;
+            const j = Math.floor(Math.random() * (wrapperRect.height - noBtnRect.height)) + 1;
+            noBtn.style.left = i + 'px';
+            noBtn.style.top = j + 'px';
+        });
+    </script>
+</body>
+
+</html>
