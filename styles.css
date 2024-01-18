@@ -3,9 +3,19 @@ body {
     text-align: center;
 }
 
-img {
-    width: 400px;
-    height: 400px;
+/* home page */
+#alert-text {
+  font-size: 50px;
+}
+
+.home-p {
+  color: #7d2ae8;
+  font-weight: 600;
+}
+
+.emphasised-words {
+  text-decoration: underline;
+  font-size: 20px;
 }
 
 .wrapper {
@@ -41,6 +51,10 @@ button {
     outline: none;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+}
+
+button:hover {
+  background-color: #7d2ae8;
 }
 
 button:nth-child(1) {
